@@ -14,6 +14,11 @@
 		827776ED1E24483400A18FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827776EB1E24483400A18FAA /* LaunchScreen.storyboard */; };
 		827776F81E24483400A18FAA /* crackMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827776F71E24483400A18FAA /* crackMeTests.swift */; };
 		82AE96121E29ABC500C2DC88 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE96111E29ABC500C2DC88 /* ResultTableViewCell.swift */; };
+		82E80DD91E2A744100DB92C7 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 82E80DD81E2A744100DB92C7 /* Cartfile */; };
+		82E80DDC1E2A759800DB92C7 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 82E80DDB1E2A759800DB92C7 /* Carthage */; };
+		82E80DDE1E2A75BF00DB92C7 /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E80DDD1E2A75BF00DB92C7 /* FontAwesome.framework */; };
+		82E80DDF1E2A75BF00DB92C7 /* FontAwesome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82E80DDD1E2A75BF00DB92C7 /* FontAwesome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		82E80DE31E2A761100DB92C7 /* FontAwesome.framework.dSYM in Copy Files */ = {isa = PBXBuildFile; fileRef = 82E80DE21E2A761100DB92C7 /* FontAwesome.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,31 @@
 			remoteInfo = crackMe;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		82E80DE01E2A75BF00DB92C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				82E80DDF1E2A75BF00DB92C7 /* FontAwesome.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E80DE11E2A75EB00DB92C7 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				82E80DE31E2A761100DB92C7 /* FontAwesome.framework.dSYM in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		827776DF1E24483400A18FAA /* crackMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crackMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +68,10 @@
 		827776F71E24483400A18FAA /* crackMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crackMeTests.swift; sourceTree = "<group>"; };
 		827776F91E24483400A18FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82AE96111E29ABC500C2DC88 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		82E80DD81E2A744100DB92C7 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		82E80DDB1E2A759800DB92C7 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		82E80DDD1E2A75BF00DB92C7 /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
+		82E80DE21E2A761100DB92C7 /* FontAwesome.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = FontAwesome.framework.dSYM; path = Carthage/Build/iOS/FontAwesome.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E80DDE1E2A75BF00DB92C7 /* FontAwesome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +96,10 @@
 		827776D61E24483300A18FAA = {
 			isa = PBXGroup;
 			children = (
+				82E80DE21E2A761100DB92C7 /* FontAwesome.framework.dSYM */,
+				82E80DDD1E2A75BF00DB92C7 /* FontAwesome.framework */,
+				82E80DDB1E2A759800DB92C7 /* Carthage */,
+				82E80DD81E2A744100DB92C7 /* Cartfile */,
 				827776E11E24483400A18FAA /* crackMe */,
 				827776F61E24483400A18FAA /* crackMeTests */,
 				827776E01E24483400A18FAA /* Products */,
@@ -109,6 +148,8 @@
 				827776DB1E24483300A18FAA /* Sources */,
 				827776DC1E24483300A18FAA /* Frameworks */,
 				827776DD1E24483300A18FAA /* Resources */,
+				82E80DE01E2A75BF00DB92C7 /* Embed Frameworks */,
+				82E80DE11E2A75EB00DB92C7 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -184,6 +225,8 @@
 			files = (
 				827776ED1E24483400A18FAA /* LaunchScreen.storyboard in Resources */,
 				827776EA1E24483400A18FAA /* Assets.xcassets in Resources */,
+				82E80DD91E2A744100DB92C7 /* Cartfile in Resources */,
+				82E80DDC1E2A759800DB92C7 /* Carthage in Resources */,
 				827776E81E24483400A18FAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +384,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = crackMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vladkampov.crackMe;
@@ -353,6 +400,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = crackMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vladkampov.crackMe;

@@ -12,6 +12,7 @@ import QuartzCore
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var successArray = Array<Int>()
     
+    @IBOutlet weak var labelsView: UIView!
     @IBOutlet weak var labelFirst: UILabel!
     @IBOutlet weak var labelSecond: UILabel!
     @IBOutlet weak var labelThird: UILabel!
@@ -20,16 +21,38 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var iter = 0
     var countOfTurns = 0
 
+    @IBOutlet weak var buttonsView: UIView!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button5: UIButton!
+    @IBOutlet weak var button6: UIButton!
+    @IBOutlet weak var button7: UIButton!
+    @IBOutlet weak var button8: UIButton!
+    @IBOutlet weak var button9: UIButton!
+    @IBOutlet weak var button0: UIButton!
+    @IBOutlet weak var removeButton: UIButton!
+    
+    var buttons: [UIButton] = [UIButton]()
     
     @IBOutlet weak var tableView: UITableView!
     var results = Array<Array<Int>>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        self.labels = [self.labelFirst, self.labelSecond, self.labelThird, self.labelFourth]
         self.iter = 0
+        let white = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 0.7)
+
+        self.labels = [self.labelFirst, self.labelSecond, self.labelThird, self.labelFourth]
+        
+        for label in labels {
+            label.layer.cornerRadius = 0.5 * label.bounds.size.width
+            label.layer.borderWidth = 2
+            label.layer.borderColor! = white.cgColor
+
+        }
+
 
         while (self.successArray.count != 4) {
             let randomNumber = Int(arc4random_uniform(10))
@@ -37,6 +60,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 self.successArray.append(randomNumber)
             }
         }
+        
+        self.buttons = [self.button0, self.button1, self.button2, self.button3, self.button4, self.button5, self.button6, self.button7, self.button8, self.button9, self.removeButton]
+        
+        for button in self.buttons {
+            button.layer.cornerRadius = 0.5 * button.bounds.size.width
+            button.layer.borderWidth = 2
+            button.layer.borderColor! = white.cgColor
+
+        }
+        
         print(self.successArray)
     }
 
