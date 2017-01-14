@@ -19,18 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var labels: [UILabel] = [UILabel]()
     var iter = 0
     var countOfTurns = 0
-    
-    @IBOutlet weak var button1: UIButton!
-    @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button3: UIButton!
-    @IBOutlet weak var button4: UIButton!
-    @IBOutlet weak var button5: UIButton!
-    @IBOutlet weak var button6: UIButton!
-    @IBOutlet weak var button7: UIButton!
-    @IBOutlet weak var button8: UIButton!
-    @IBOutlet weak var button9: UIButton!
-    @IBOutlet weak var button0: UIButton!
-    var buttons: [UIButton] = [UIButton]()
+
     
     @IBOutlet weak var tableView: UITableView!
     var results = Array<Array<Int>>()
@@ -41,8 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.labels = [self.labelFirst, self.labelSecond, self.labelThird, self.labelFourth]
         self.iter = 0
-        self.buttons = [self.button0, self.button1, self.button2, self.button3, self.button4, self.button5, self.button6, self.button7, self.button8, self.button9]
-        
+
         while (self.successArray.count != 4) {
             let randomNumber = Int(arc4random_uniform(10))
             if (!self.successArray.contains(randomNumber)) {

@@ -253,16 +253,6 @@
                         <color key="backgroundColor" red="1" green="0.73179989328308892" blue="0.41496133162070892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="button0" destination="fsY-tL-tS8" id="blE-JO-DG1"/>
-                        <outlet property="button1" destination="EEG-Rh-hgM" id="Wdi-GV-zD5"/>
-                        <outlet property="button2" destination="uF9-r0-eyD" id="NZr-jg-B8s"/>
-                        <outlet property="button3" destination="dqq-cT-y19" id="isZ-VI-NGj"/>
-                        <outlet property="button4" destination="sZo-xj-emC" id="7zb-l3-z7X"/>
-                        <outlet property="button5" destination="Xzy-Rp-Phg" id="UVc-23-h33"/>
-                        <outlet property="button6" destination="MIJ-RB-MlQ" id="7Wv-xK-sue"/>
-                        <outlet property="button7" destination="hNV-yA-hVL" id="dBG-bH-2Lr"/>
-                        <outlet property="button8" destination="tmX-jq-zgP" id="N4T-0a-6AY"/>
-                        <outlet property="button9" destination="SR2-mr-SVC" id="PhT-TZ-k0y"/>
                         <outlet property="labelFirst" destination="l7r-Fj-zLL" id="wfl-o2-dGi"/>
                         <outlet property="labelFourth" destination="4c7-Ia-AgL" id="LRB-C7-cSf"/>
                         <outlet property="labelSecond" destination="6lP-ly-MJM" id="mu4-n4-Yyl"/>
