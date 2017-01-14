@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var labelFourth: UILabel!
     var labels: [UILabel] = [UILabel]()
     var iter = 0
+    var countOfTurns = 0
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -73,16 +74,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func turnFinish() {
         var tmp = Array<Int>()
         for i in 0...self.labels.count - 1 {
-            tmp.append(Int(self.labels[i].text!))
+            tmp.append(Int(self.labels[i].text!)!)
         }
         
         for i in 0...self.labels.count - 1 {
             self.labels[i].text! = ""
         }
-        self.results.append(tmp)
+        self.results.insert(tmp, at: 0)
         self.iter = 0
-        
+        self.countOfTurns += 1
         self.tableView.reloadData()
+    }
+    
+    func endOfTheGame() {
+        self.results = []
+        self.iter = 0
+        self.countOfTurns = 0
+        
+        for el in self.labels {
+            print(el)
+        }
+        
+        return
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -93,10 +106,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ResultTableViewCell
         
         var currentResult = results[indexPath.row]
-        cell.labelFirst.text = Int(currentResult[0])
-        cell.labelSecond.text = Int(currentResult[1])
-        cell.labelThird.text = Int(currentResult[2])
-        cell.labelFourth.text = Int(currentResult[3])
+        cell.labelFirst.text = String(currentResult[0])
+        cell.labelSecond.text = String(currentResult[1])
+        cell.labelThird.text = String(currentResult[2])
+        cell.labelFourth.text = String(currentResult[3])
         
         var rightNumbers = 0
         var weakNumbers = 0
