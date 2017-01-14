@@ -13,6 +13,7 @@
 		827776EA1E24483400A18FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 827776E91E24483400A18FAA /* Assets.xcassets */; };
 		827776ED1E24483400A18FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827776EB1E24483400A18FAA /* LaunchScreen.storyboard */; };
 		827776F81E24483400A18FAA /* crackMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827776F71E24483400A18FAA /* crackMeTests.swift */; };
+		82AE96121E29ABC500C2DC88 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE96111E29ABC500C2DC88 /* ResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		827776F31E24483400A18FAA /* crackMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crackMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		827776F71E24483400A18FAA /* crackMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crackMeTests.swift; sourceTree = "<group>"; };
 		827776F91E24483400A18FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82AE96111E29ABC500C2DC88 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				827776E21E24483400A18FAA /* AppDelegate.swift */,
 				827776E41E24483400A18FAA /* ViewController.swift */,
 				827776E61E24483400A18FAA /* Main.storyboard */,
+				82AE96111E29ABC500C2DC88 /* ResultTableViewCell.swift */,
 				827776E91E24483400A18FAA /* Assets.xcassets */,
 				827776EB1E24483400A18FAA /* LaunchScreen.storyboard */,
 				827776EE1E24483400A18FAA /* Info.plist */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				827776E51E24483400A18FAA /* ViewController.swift in Sources */,
+				82AE96121E29ABC500C2DC88 /* ResultTableViewCell.swift in Sources */,
 				827776E31E24483400A18FAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
