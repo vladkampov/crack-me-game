@@ -10,7 +10,6 @@ import UIKit
 import FontAwesome
 
 class ResultTableViewCell: UITableViewCell {
-
     @IBOutlet weak var labelFirst: UILabel!
     @IBOutlet weak var labelSecond: UILabel!
     @IBOutlet weak var labelThird: UILabel!

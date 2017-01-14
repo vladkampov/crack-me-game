@@ -8,6 +8,7 @@
 
 import UIKit
 import QuartzCore
+import FontAwesome
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var successArray = Array<Int>()
@@ -33,6 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var button9: UIButton!
     @IBOutlet weak var button0: UIButton!
     @IBOutlet weak var removeButton: UIButton!
+    @IBOutlet weak var replay: UIButton!
     
     var buttons: [UIButton] = [UIButton]()
     
@@ -50,7 +52,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             label.layer.cornerRadius = 0.5 * label.bounds.size.width
             label.layer.borderWidth = 2
             label.layer.borderColor! = white.cgColor
-
         }
 
 
@@ -61,15 +62,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
         
-        self.buttons = [self.button0, self.button1, self.button2, self.button3, self.button4, self.button5, self.button6, self.button7, self.button8, self.button9, self.removeButton]
+        self.buttons = [self.button0, self.button1, self.button2, self.button3, self.button4, self.button5, self.button6, self.button7, self.button8, self.button9]
         
         for button in self.buttons {
             button.layer.cornerRadius = 0.5 * button.bounds.size.width
             button.layer.borderWidth = 2
             button.layer.borderColor! = white.cgColor
-
         }
         
+        self.removeButton.titleLabel!.font = UIFont.fontAwesome(ofSize: 30)
+        self.removeButton.setTitle(String.fontAwesomeIcon(code: "fa-eraser")
+            ,for: .normal)
+        self.replay.titleLabel!.font = UIFont.fontAwesome(ofSize: 30)
+        self.replay.setTitle(String.fontAwesomeIcon(code: "fa-repeat")
+,for: .normal)
         print(self.successArray)
     }
 
@@ -90,6 +96,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func removeButton(_ sender: UIButton) {
         self.iter -= 1
         self.labels[self.iter].text! = ""
+    }
+    
+    @IBAction func replayButton(_ sender: UIButton) {
+        endOfTheGame()
     }
     
     func turnFinish() {
