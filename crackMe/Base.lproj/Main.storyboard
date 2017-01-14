@@ -176,7 +176,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bqJ-Tt-lPY" customClass="ResultTableViewCell" customModule="crackMe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="bqJ-Tt-lPY" customClass="ResultTableViewCell" customModule="crackMe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bqJ-Tt-lPY" id="zfO-YU-v2m">
@@ -235,7 +235,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="ResultView" destination="D5d-ha-1bS" id="WMs-PU-4b6"/>
                                             <outlet property="labelFirst" destination="tSJ-B6-aOu" id="reb-dR-ULO"/>
                                             <outlet property="labelFourth" destination="Fhe-Ci-0l2" id="TKF-ac-NDE"/>
                                             <outlet property="labelSecond" destination="a0B-io-Bd2" id="t3X-ww-Szp"/>
@@ -246,15 +245,14 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="TJ2-MB-Nvb"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="S8B-yB-fXn"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="er7-vU-wSi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="V58-oG-x6A"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.73179989328308892" blue="0.41496133162070892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="ResultsTableView" destination="PLM-5D-qKR" id="cbc-m2-7oE"/>
                         <outlet property="button0" destination="fsY-tL-tS8" id="blE-JO-DG1"/>
                         <outlet property="button1" destination="EEG-Rh-hgM" id="Wdi-GV-zD5"/>
                         <outlet property="button2" destination="uF9-r0-eyD" id="NZr-jg-B8s"/>
@@ -269,6 +267,7 @@
                         <outlet property="labelFourth" destination="4c7-Ia-AgL" id="LRB-C7-cSf"/>
                         <outlet property="labelSecond" destination="6lP-ly-MJM" id="mu4-n4-Yyl"/>
                         <outlet property="labelThird" destination="BpM-n3-Gmm" id="Zo0-pb-UAr"/>
+                        <outlet property="tableView" destination="PLM-5D-qKR" id="fWc-UK-fu4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
